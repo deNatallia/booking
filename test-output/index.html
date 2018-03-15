@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" />  
+    <script type="text/javascript" src="jquery-1.7.1.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>
+    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <br/>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" class="collapse-all-link" title="Collapse/expand all the suites">
+          <img class="collapse-all-icon" src="collapseall.gif">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" class="navigator-link" panel-name="suite-Carina_Demo_Tests_-_Web_tests">
+              <span class="suite-name border-failed">Carina Demo Tests - Web tests</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="test-xml-Carina_Demo_Tests_-_Web_tests">
+                    <span>web.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="testlist-Carina_Demo_Tests_-_Web_tests">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="group-Carina_Demo_Tests_-_Web_tests">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="times-Carina_Demo_Tests_-_Web_tests">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="reporter-Carina_Demo_Tests_-_Web_tests">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="ignored-methods-Carina_Demo_Tests_-_Web_tests">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" class="navigator-link " panel-name="chronological-Carina_Demo_Tests_-_Web_tests">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">2 methods, 1 failed,   1 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-Carina_Demo_Tests_-_Web_tests" class="hide-methods failed suite-Carina_Demo_Tests_-_Web_tests"> (hide)</a> <!-- hide-methods failed suite-Carina_Demo_Tests_-_Web_tests -->
+                      <a href="#" panel-name="suite-Carina_Demo_Tests_-_Web_tests" class="show-methods failed suite-Carina_Demo_Tests_-_Web_tests"> (show)</a> <!-- show-methods failed suite-Carina_Demo_Tests_-_Web_tests -->
+                    </span>
+                    <div class="method-list-content failed suite-Carina_Demo_Tests_-_Web_tests">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Carina_Demo_Tests_-_Web_tests" title="com.qaprosoft.carina.demo.AutoBaraholkaTest" hash-for-method="filterCars(1, 5, 1, 2009, 2015, 4, 0, 1)">filterCars(1, 5, 1, 2009, 2015, 4, 0, 1)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-Carina_Demo_Tests_-_Web_tests -->
+                  </li>
+                  <li>
+                    <span class="method-list-title passed">Passed methods</span>
+                    <span class="show-or-hide-methods passed">
+                      <a href="#" panel-name="suite-Carina_Demo_Tests_-_Web_tests" class="hide-methods passed suite-Carina_Demo_Tests_-_Web_tests"> (hide)</a> <!-- hide-methods passed suite-Carina_Demo_Tests_-_Web_tests -->
+                      <a href="#" panel-name="suite-Carina_Demo_Tests_-_Web_tests" class="show-methods passed suite-Carina_Demo_Tests_-_Web_tests"> (show)</a> <!-- show-methods passed suite-Carina_Demo_Tests_-_Web_tests -->
+                    </span>
+                    <div class="method-list-content passed suite-Carina_Demo_Tests_-_Web_tests">
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-Carina_Demo_Tests_-_Web_tests" title="com.qaprosoft.carina.demo.AutoBaraholkaTest" hash-for-method="loginOnliner(natti, 5708007)">loginOnliner(natti, 5708007)</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content passed suite-Carina_Demo_Tests_-_Web_tests -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-Carina_Demo_Tests_-_Web_tests" class="panel Carina_Demo_Tests_-_Web_tests">
+          <div class="suite-Carina_Demo_Tests_-_Web_tests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.qaprosoft.carina.demo.AutoBaraholkaTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="filterCars(1, 5, 1, 2009, 2015, 4, 0, 1)">
+                  </a> <!-- filterCars(1, 5, 1, 2009, 2015, 4, 0, 1) -->
+                  <span class="method-name">filterCars</span>
+                  <span class="parameters">(1, 5, 1, 2009, 2015, 4, 0, 1)</span>
+                  <div class="stack-trace">java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at com.qaprosoft.carina.core.foundation.webdriver.locator.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:62)
+	at com.sun.proxy.$Proxy20.get(Unknown Source)
+	at com.qaprosoft.carina.demo.autobaraholka.AutoBaraholkaPage.openCarPage(AutoBaraholkaPage.java:46)
+	at com.qaprosoft.carina.demo.AutoBaraholkaTest.filterCars(AutoBaraholkaTest.java:45)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+... Removed 20 stack frames
+</div> <!-- stack-trace -->
+                  <em>
+(JIRA#AUTO-10011)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Carina_Demo_Tests_-_Web_tests-class-failed -->
+          <div class="suite-Carina_Demo_Tests_-_Web_tests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">com.qaprosoft.carina.demo.AutoBaraholkaTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="loginOnliner(natti, 5708007)">
+                  </a> <!-- loginOnliner(natti, 5708007) -->
+                  <span class="method-name">loginOnliner</span>
+                  <span class="parameters">(natti, 5708007)</span>
+                  <em>
+(JIRA#AUTO-10010)                  </em>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-Carina_Demo_Tests_-_Web_tests-class-passed -->
+        </div> <!-- panel Carina_Demo_Tests_-_Web_tests -->
+        <div panel-name="test-xml-Carina_Demo_Tests_-_Web_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">/Users/nmarkava/git/booking/src/test/resources/testng_suites/web.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;http://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite thread-count=&quot;1&quot; name=&quot;Carina Demo Tests - Web tests&quot; parallel=&quot;tests&quot; data-provider-thread-count=&quot;50&quot;&gt;
+  &lt;parameter name=&quot;jenkinsJobFolder&quot; value=&quot;DEMO&quot;/&gt;
+  &lt;parameter name=&quot;jenkinsJobName&quot; value=&quot;Web-Demo-Test&quot;/&gt;
+  &lt;parameter name=&quot;jenkinsEnvironments&quot; value=&quot;DEMO&quot;/&gt;
+  &lt;parameter name=&quot;jenkinsEmail&quot; value=&quot;demo@qaprosoft.com&quot;/&gt;
+  &lt;parameter name=&quot;jenkinsJobCreation&quot; value=&quot;true&quot;/&gt;
+  &lt;parameter name=&quot;suiteOwner&quot; value=&quot;demo&quot;/&gt;
+  &lt;parameter name=&quot;zafira_project&quot; value=&quot;DEMO-WEB&quot;/&gt;
+  &lt;listeners&gt;
+    &lt;listener class-name=&quot;com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer&quot;/&gt;
+  &lt;/listeners&gt;
+  &lt;test name=&quot;auto baraholka tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.qaprosoft.carina.demo.AutoBaraholkaTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- auto baraholka tests --&gt;
+&lt;/suite&gt; &lt;!-- Carina Demo Tests - Web tests --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-Carina_Demo_Tests_-_Web_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for Carina Demo Tests - Web tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">auto baraholka tests (1 class)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-Carina_Demo_Tests_-_Web_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for Carina Demo Tests - Web tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-Carina_Demo_Tests_-_Web_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for Carina Demo Tests - Web tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_Carina_Demo_Tests_-_Web_tests');
+function tableData_Carina_Demo_Tests_-_Web_tests() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(2);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'filterCars')
+data.setCell(0, 2, 'com.qaprosoft.carina.demo.AutoBaraholkaTest')
+data.setCell(0, 3, 35748);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'loginOnliner')
+data.setCell(1, 2, 'com.qaprosoft.carina.demo.AutoBaraholkaTest')
+data.setCell(1, 3, 13155);
+window.suiteTableData['Carina_Demo_Tests_-_Web_tests']= { tableData: data, tableDiv: 'times-div-Carina_Demo_Tests_-_Web_tests'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 48 seconds</span>
+              <div id="times-div-Carina_Demo_Tests_-_Web_tests">
+              </div> <!-- times-div-Carina_Demo_Tests_-_Web_tests -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-Carina_Demo_Tests_-_Web_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for Carina Demo Tests - Web tests</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-Carina_Demo_Tests_-_Web_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-Carina_Demo_Tests_-_Web_tests" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.qaprosoft.carina.demo.AutoBaraholkaTest</div> <!-- chronological-class-name -->
+              <div class="configuration-suite before">
+                <span class="method-name">executeBeforeTestSuite(org.testng.TestRunner@5170bcf4)</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- configuration-suite before -->
+              <div class="configuration-class before">
+                <span class="method-name">executeBeforeTestClass(org.testng.TestRunner@5170bcf4)</span>
+                <span class="method-start">6426 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="configuration-method before">
+                <span class="method-name">executeBeforeTestMethod([Test: "auto baraholka tests" verbose:1[parameters:][metagroups:] [included: ][excluded: ]  classes:...)</span>
+                <span class="method-start">7726 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">filterCars(1, 5, 1, 2009, 2015, 4, 0, 1)</span>
+                <span class="method-start">7730 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">executeAfterTestMethod([TestResult name=filterCars status=FAILURE method=AutoBaraholkaTest.filterCars(java.lang.String, jav...)</span>
+                <span class="method-start">45822 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-method before">
+                <span class="method-name">executeBeforeTestMethod([Test: "auto baraholka tests" verbose:1[parameters:][metagroups:] [included: ][excluded: ]  classes:...)</span>
+                <span class="method-start">45983 ms</span>
+              </div> <!-- configuration-method before -->
+              <div class="test-method">
+                <span class="method-name">loginOnliner(natti, 5708007)</span>
+                <span class="method-start">45984 ms</span>
+              </div> <!-- test-method -->
+              <div class="configuration-method after">
+                <span class="method-name">executeAfterTestMethod([TestResult name=loginOnliner status=SUCCESS method=AutoBaraholkaTest.loginOnliner(java.lang.String,...)</span>
+                <span class="method-start">59152 ms</span>
+              </div> <!-- configuration-method after -->
+              <div class="configuration-class after">
+                <span class="method-name">executeAfterTestClass(org.testng.TestRunner@5170bcf4)</span>
+                <span class="method-start">59256 ms</span>
+              </div> <!-- configuration-class after -->
+              <div class="configuration-suite after">
+                <span class="method-name">executeAfterTestSuite(org.testng.TestRunner@5170bcf4)</span>
+                <span class="method-start">64324 ms</span>
+              </div> <!-- configuration-suite after -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+</html>

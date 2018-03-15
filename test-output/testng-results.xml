@@ -1,0 +1,222 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="1" total="2" passed="1">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Carina Demo Tests - Web tests" duration-ms="52859" started-at="2018-03-15T15:07:17Z" finished-at="2018-03-15T15:08:10Z">
+    <groups>
+    </groups>
+    <test name="auto baraholka tests" duration-ms="52859" started-at="2018-03-15T15:07:17Z" finished-at="2018-03-15T15:08:10Z">
+      <class name="com.qaprosoft.carina.demo.AutoBaraholkaTest">
+        <test-method status="PASS" signature="executeBeforeTestSuite(org.testng.ITestContext)[pri:0, instance:com.qaprosoft.carina.demo.AutoBaraholkaTest@6385cb26]" name="executeBeforeTestSuite" is-config="true" duration-ms="6398" started-at="2018-03-15T18:07:11Z" finished-at="2018-03-15T18:07:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5170bcf4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeBeforeTestSuite -->
+        <test-method status="PASS" signature="executeBeforeTestClass(org.testng.ITestContext)[pri:0, instance:com.qaprosoft.carina.demo.AutoBaraholkaTest@6385cb26]" name="executeBeforeTestClass" is-config="true" duration-ms="0" started-at="2018-03-15T18:07:17Z" finished-at="2018-03-15T18:07:17Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5170bcf4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeBeforeTestClass -->
+        <test-method status="PASS" signature="executeBeforeTestMethod(org.testng.xml.XmlTest, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.qaprosoft.carina.demo.AutoBaraholkaTest@6385cb26]" name="executeBeforeTestMethod" is-config="true" duration-ms="4" started-at="2018-03-15T18:07:19Z" finished-at="2018-03-15T18:07:19Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Test: "auto baraholka tests" verbose:1[parameters:][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.qaprosoft.carina.demo.AutoBaraholkaTest]  packages:] ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.qaprosoft.carina.demo.AutoBaraholkaTest.filterCars(java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@5170bcf4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeBeforeTestMethod -->
+        <test-method status="FAIL" signature="filterCars(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qaprosoft.carina.demo.AutoBaraholkaTest@6385cb26]" name="filterCars" duration-ms="35748" started-at="2018-03-15T18:07:19Z" description="JIRA#AUTO-10011" data-provider="SingleDataProvider" finished-at="2018-03-15T18:07:54Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+            <param index="3">
+              <value>
+                <![CDATA[2009]]>
+              </value>
+            </param>
+            <param index="4">
+              <value>
+                <![CDATA[2015]]>
+              </value>
+            </param>
+            <param index="5">
+              <value>
+                <![CDATA[4]]>
+              </value>
+            </param>
+            <param index="6">
+              <value>
+                <![CDATA[0]]>
+              </value>
+            </param>
+            <param index="7">
+              <value>
+                <![CDATA[1]]>
+              </value>
+            </param>
+          </params>
+          <exception class="java.lang.IndexOutOfBoundsException">
+            <message>
+              <![CDATA[Index: 1, Size: 0]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.IndexOutOfBoundsException: Index: 1, Size: 0
+	at java.util.ArrayList.rangeCheck(ArrayList.java:657)
+	at java.util.ArrayList.get(ArrayList.java:433)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at com.qaprosoft.carina.core.foundation.webdriver.locator.internal.LocatingElementListHandler.invoke(LocatingElementListHandler.java:62)
+	at com.sun.proxy.$Proxy20.get(Unknown Source)
+	at com.qaprosoft.carina.demo.autobaraholka.AutoBaraholkaPage.openCarPage(AutoBaraholkaPage.java:46)
+	at com.qaprosoft.carina.demo.AutoBaraholkaTest.filterCars(AutoBaraholkaTest.java:45)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:62)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.lang.reflect.Method.invoke(Method.java:498)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:348)
+	at org.testng.SuiteRunner.access$000(SuiteRunner.java:38)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:382)
+	at org.testng.internal.thread.ThreadUtil$2.call(ThreadUtil.java:64)
+	at java.util.concurrent.FutureTask.run(FutureTask.java:266)
+	at java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1149)
+	at java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:624)
+	at java.lang.Thread.run(Thread.java:748)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.IndexOutOfBoundsException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- filterCars -->
+        <test-method status="PASS" signature="executeAfterTestMethod(org.testng.ITestResult)[pri:0, instance:com.qaprosoft.carina.demo.AutoBaraholkaTest@6385cb26]" name="executeAfterTestMethod" is-config="true" duration-ms="131" started-at="2018-03-15T18:07:57Z" finished-at="2018-03-15T18:07:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=filterCars status=FAILURE method=AutoBaraholkaTest.filterCars(java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String, java.lang.String)[pri:0, instance:com.qaprosoft.carina.demo.AutoBaraholkaTest@6385cb26] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeAfterTestMethod -->
+        <test-method status="PASS" signature="executeBeforeTestMethod(org.testng.xml.XmlTest, java.lang.reflect.Method, org.testng.ITestContext)[pri:0, instance:com.qaprosoft.carina.demo.AutoBaraholkaTest@6385cb26]" name="executeBeforeTestMethod" is-config="true" duration-ms="1" started-at="2018-03-15T18:07:57Z" finished-at="2018-03-15T18:07:57Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[Test: "auto baraholka tests" verbose:1[parameters:][metagroups:] [included: ][excluded: ]  classes:[XmlClass class=com.qaprosoft.carina.demo.AutoBaraholkaTest]  packages:] ]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[public void com.qaprosoft.carina.demo.AutoBaraholkaTest.loginOnliner(java.lang.String,java.lang.String)]]>
+              </value>
+            </param>
+            <param index="2">
+              <value>
+                <![CDATA[org.testng.TestRunner@5170bcf4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeBeforeTestMethod -->
+        <test-method status="PASS" signature="loginOnliner(java.lang.String, java.lang.String)[pri:0, instance:com.qaprosoft.carina.demo.AutoBaraholkaTest@6385cb26]" name="loginOnliner" duration-ms="13155" started-at="2018-03-15T18:07:57Z" description="JIRA#AUTO-10010" data-provider="SingleDataProvider" finished-at="2018-03-15T18:08:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[natti]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[5708007]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginOnliner -->
+        <test-method status="PASS" signature="executeAfterTestMethod(org.testng.ITestResult)[pri:0, instance:com.qaprosoft.carina.demo.AutoBaraholkaTest@6385cb26]" name="executeAfterTestMethod" is-config="true" duration-ms="104" started-at="2018-03-15T18:08:10Z" finished-at="2018-03-15T18:08:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[[TestResult name=loginOnliner status=SUCCESS method=AutoBaraholkaTest.loginOnliner(java.lang.String, java.lang.String)[pri:0, instance:com.qaprosoft.carina.demo.AutoBaraholkaTest@6385cb26] output={null}]]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeAfterTestMethod -->
+        <test-method status="PASS" signature="executeAfterTestClass(org.testng.ITestContext)[pri:0, instance:com.qaprosoft.carina.demo.AutoBaraholkaTest@6385cb26]" name="executeAfterTestClass" is-config="true" duration-ms="1" started-at="2018-03-15T18:08:10Z" finished-at="2018-03-15T18:08:10Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5170bcf4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeAfterTestClass -->
+        <test-method status="PASS" signature="executeAfterTestSuite(org.testng.ITestContext)[pri:0, instance:com.qaprosoft.carina.demo.AutoBaraholkaTest@6385cb26]" name="executeAfterTestSuite" is-config="true" duration-ms="28" started-at="2018-03-15T18:08:15Z" finished-at="2018-03-15T18:08:15Z">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[org.testng.TestRunner@5170bcf4]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- executeAfterTestSuite -->
+      </class> <!-- com.qaprosoft.carina.demo.AutoBaraholkaTest -->
+    </test> <!-- auto baraholka tests -->
+  </suite> <!-- Carina Demo Tests - Web tests -->
+</testng-results>

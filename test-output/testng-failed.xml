@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite thread-count="1" name="Failed suite [Carina Demo Tests - Web tests]" parallel="tests" data-provider-thread-count="50">
+  <parameter name="jenkinsJobFolder" value="DEMO"/>
+  <parameter name="jenkinsJobName" value="Web-Demo-Test"/>
+  <parameter name="jenkinsEnvironments" value="DEMO"/>
+  <parameter name="jenkinsEmail" value="demo@qaprosoft.com"/>
+  <parameter name="jenkinsJobCreation" value="true"/>
+  <parameter name="suiteOwner" value="demo"/>
+  <parameter name="zafira_project" value="DEMO-WEB"/>
+  <listeners>
+    <listener class-name="com.qaprosoft.carina.core.foundation.retry.AnnotationTransformer"/>
+  </listeners>
+  <test name="auto baraholka tests(failed)" parallel="tests">
+    <classes>
+      <class name="com.qaprosoft.carina.demo.AutoBaraholkaTest">
+        <methods>
+          <include name="executeBeforeTestSuite"/>
+          <include name="executeAfterTestSuite"/>
+          <include name="filterCars" invocation-numbers="0"/>
+          <include name="executeAfterTestMethod"/>
+          <include name="executeBeforeTestMethod"/>
+          <include name="executeAfterTestClass"/>
+          <include name="executeBeforeTestClass"/>
+        </methods>
+      </class> <!-- com.qaprosoft.carina.demo.AutoBaraholkaTest -->
+    </classes>
+  </test> <!-- auto baraholka tests(failed) -->
+</suite> <!-- Failed suite [Carina Demo Tests - Web tests] -->
